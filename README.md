@@ -3,7 +3,7 @@
 A banda de Miguel te contratou para ajudá-los na criação de uma instância EC2 para organizar a documentação e os arquivos importantes da banda. Recentemente, a banda se interessou pelo mundo da computação em nuvem e decidiu explorar o Amazon EC2, um serviço popular de infraestrutura como serviço (IaaS) oferecido pela Amazon Web Services (AWS). Eles também conheceram o Amazon Linux, que é uma distribuição otimizada para a nuvem, sendo uma opção excelente para as instâncias EC2. Os membros da banda estão empolgados para testar essa tecnologia e começar a armazenar e gerenciar os seus documentos e arquivos na nuvem. Neste exercício, iremos ajudá-los com isso.
 
 ## Descrição
-Este projeto documenta o processo de configuração de uma instância EC2 no Amazon Web Services (AWS), o anexo de um novo volume recém criado, a formatação de montagem do volume, a criação de arquivos no volume, e a verificação de saúde do volume.
+Este projeto documenta o processo de configuração de uma instância EC2 no Amazon Web Services (AWS), o anexo de um novo volume recém criado, a formatação de montagem do volume, a criação de arquivos no volume, e a verificação do status do volume.
 
 ## Passos Seguidos
 
@@ -115,7 +115,23 @@ Este projeto documenta o processo de configuração de uma instância EC2 no Ama
      ```
 
 ### 7. Prints de Tela
-(anexar prints)
+
+#### Conteúdo do Diretório Montado
+
+![ls -l /mnt/ebs](ls-l-mnt-ebs.png)
+
+#### Espaço em Disco Disponível
+
+![df -h](df-h.png)
+
+#### Ponto de Montagem
+
+![mount | grep /mnt/ebs](mount-grep-mnt-ebs.png)
+
+#### Conteúdo do Arquivo
+
+![cat /mnt/ebs/meuarquivo.txt](cat-meuarquivo.png)
+
 
 ### 8. Encerrando a Instância
 
